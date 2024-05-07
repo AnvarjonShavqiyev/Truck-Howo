@@ -1,6 +1,6 @@
 .navbar__wrapper{
-    background-color: rgb(45, 106, 79);
-    padding: 3px 0px;
+    background-color: #fff;
+    padding: 10px 0px;
 }
 .navbar{
     display: flex;
@@ -9,16 +9,16 @@
 }
 .logo{
     font-size: 20px;
-    color: #fff;
+    color: #000;
 }
 .navbar__menu{
     display: flex;
     gap: 40px;
-    color: #fff;
+    color: #000;
 }
 .lang-select{
     background-color: transparent;
-    color: #fff;
+    color: #000;
     border: none;
     font-size: 16px;
 }

@@ -18,22 +18,18 @@ const Hero = () => {
       </div>
       <div className='adventages'>
         <Container>
-          <h3>Afzalliklarimiz</h3>
-          <div className='adventages-wrapper'>
+          <div className='about-us'>
             <div>
-              <img src={check}></img>
-              <strong>Yuqori sifatli mahsulot</strong>
-              <p>Arzon narxlarda yuqori sifatli mahsulotlar sotib olish</p>
+              <h3>4</h3>
+              <p>filiallar</p>
             </div>
             <div>
-              <img src={clock}></img>
-              <strong>24 soat xizmat</strong>
-              <p>Operatorlarimiz siz bilan doimiy aloqada</p>
+              <h3>3</h3>
+              <p>yillik tajriba</p>
             </div>
             <div>
-              <img src={deleviry}></img>
-              <strong>Express etkazib berish</strong>
-              <p>Siz aytga manzilga ham yetqazamiz</p>
+              <h3>500+</h3>
+              <p>mamnun mijozlar</p>
             </div>
           </div>
         </Container>
