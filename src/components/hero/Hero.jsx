@@ -9,7 +9,7 @@ const Hero = () => {
   const { t } = useTranslation()
   return (
     <div>
-      <div className='hero__wrapper'>
+      <div id='aboutus' className='hero__wrapper'>
         <div className='hero-information'>
             <h3>{t('hero-information')}</h3>
             <button>{t('extiyot-qismlar')}</button>
@@ -18,6 +18,7 @@ const Hero = () => {
       </div>
       <div className='adventages'>
         <Container>
+          <h3 style={{fontSize:35, textAlign:'center',paddingTop:20}}>Biz haqimizda</h3>
           <div className='about-us'>
             <div>
               <h3>4</h3>
@@ -30,6 +31,10 @@ const Hero = () => {
             <div>
               <h3>500+</h3>
               <p>{t('mijozlar')}</p>
+            </div>
+            <div>
+              <h3>10+</h3>
+              <p>{t('hamkorlar')}</p>
             </div>
           </div>
         </Container>

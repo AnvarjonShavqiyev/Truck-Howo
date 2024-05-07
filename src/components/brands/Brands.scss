@@ -1,0 +1,13 @@
+.brands__wrapper{
+    padding: 20px 0;
+}
+.all__brands{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.brands img{
+    width: 200px;
+}

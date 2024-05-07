@@ -20,14 +20,16 @@ const Navbar = () => {
   return (
     <div className='navbar__wrapper'>
       <Container>
-        <div className='navbar'>
+        <div className='navbar' id='main'>
           <div>
             <h1 className='logo'>Truck Howo</h1>
           </div>
           <ul className='navbar__menu'>
-            <li className='navbar__items'>{t('bizHaqimizda')}</li>
-            <li className='navbar__items'>{t('maxsulotlar')}</li>
-            <li className='navbar__items'>{t('asosiy')}</li>
+            <li className='navbar__items'><a href='#aboutus'>{t('bizHaqimizda')}</a></li>
+            <li className='navbar__items'><a href='#products'>{t('maxsulotlar')}</a></li>
+            <li className='navbar__items'><a href='#main'>{t('asosiy')}</a></li>
+            <li className='navbar__items'><a href='#brands'>{t('brandlar')}</a></li>
+            <li className='navbar__items'><a href='#contact'>{t('contact')}</a></li>
           </ul>
           <div>
             <select

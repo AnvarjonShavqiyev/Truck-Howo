@@ -18,7 +18,10 @@ i18n
             "clock-title":"24 soat xizmat",
             "filiallar":"filiallar",
             "tajriba":"yillik tajriba",
-            "mijozlar":"mamnun mijozlar"
+            "mijozlar":"mamnun mijozlar",
+            "hamkorlar":"hamkorlar",
+            "brandlar":"Brandlar",
+            "contact":"Bog'lanish"
         },
       },
       RU:{
@@ -33,7 +36,10 @@ i18n
             "clock-title":"24-часовое обслуживание",
             "filiallar":"филиал",
             "tajriba":"года опыта",
-            "mijozlar":"довольных клиентов"
+            "mijozlar":"довольных клиентов",
+            "hamkorlar":"партнеры",
+            "brandlar":"Бренды",
+            "contact":"Связаться с нами"
         },
       }
     },
