@@ -12,7 +12,10 @@ i18n
             "maxsulotlar":"Maxsulotlar",
             "asosiy":"Asosiy",
             "hero-information":"Truck uchun eng yaxshi extiyot qismlarni oling.Eng yaxshilarini ilinamiz :)",
-            "extiyot-qismlar":"Extiyot qismlar"
+            "extiyot-qismlar":"Extiyot qismlar",
+            "check-title":"Yuqori sifatli mahsulot",
+            "check-info":"Arzon narxlarda yuqori sifatli mahsulotlar sotib olish",
+            "clock-title":"24 soat xizmat"
         },
       },
       RU:{
@@ -21,7 +24,10 @@ i18n
             "maxsulotlar":"Продукты",
             "asosiy":"Oсновной",
             "hero-information":"Приобретайте лучшие запчасти для вашего грузовика.Мы опубликуем лучшие :)",
-            "extiyot-qismlar":"Запасные части"
+            "extiyot-qismlar":"Запасные части",
+            "check-title":"Высококачественный продукт",
+            "check-info":"Покупайте качественную продукцию по низким ценам",
+            "clock-title":"24-часовое обслуживание"
         },
       }
     },
