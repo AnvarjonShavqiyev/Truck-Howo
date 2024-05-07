@@ -1,0 +1,30 @@
+.products__wrapper{
+    background-color: #000;
+    width: 100%;
+    padding: 20px 0;
+}
+.section-title{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.category-img{
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+.category-title{
+    color: #fff;
+    letter-spacing: 2px;
+}
+.category__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.category__wrapper div{
+    cursor: pointer;
+}

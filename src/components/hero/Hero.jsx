@@ -21,15 +21,15 @@ const Hero = () => {
           <div className='about-us'>
             <div>
               <h3>4</h3>
-              <p>filiallar</p>
+              <p>{t('filiallar')}</p>
             </div>
             <div>
               <h3>3</h3>
-              <p>yillik tajriba</p>
+              <p>{t('tajriba')}</p>
             </div>
             <div>
               <h3>500+</h3>
-              <p>mamnun mijozlar</p>
+              <p>{t('mijozlar')}</p>
             </div>
           </div>
         </Container>

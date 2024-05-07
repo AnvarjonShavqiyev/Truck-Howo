@@ -15,7 +15,10 @@ i18n
             "extiyot-qismlar":"Extiyot qismlar",
             "check-title":"Yuqori sifatli mahsulot",
             "check-info":"Arzon narxlarda yuqori sifatli mahsulotlar sotib olish",
-            "clock-title":"24 soat xizmat"
+            "clock-title":"24 soat xizmat",
+            "filiallar":"filiallar",
+            "tajriba":"yillik tajriba",
+            "mijozlar":"mamnun mijozlar"
         },
       },
       RU:{
@@ -27,7 +30,10 @@ i18n
             "extiyot-qismlar":"Запасные части",
             "check-title":"Высококачественный продукт",
             "check-info":"Покупайте качественную продукцию по низким ценам",
-            "clock-title":"24-часовое обслуживание"
+            "clock-title":"24-часовое обслуживание",
+            "filiallar":"филиал",
+            "tajriba":"года опыта",
+            "mijozlar":"довольных клиентов"
         },
       }
     },
