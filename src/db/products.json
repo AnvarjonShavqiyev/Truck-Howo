@@ -2,7 +2,7 @@
     "products":[
         {
             "title":"Polik",
-            "img":"../../public/polik/SHAANXI-X3000.jpg",
+            "img":"./../public/polik/SHAANXI-X3000.jpg",
             "products":[
                 {
                     "name":"Полик SHAANXI X3000",
