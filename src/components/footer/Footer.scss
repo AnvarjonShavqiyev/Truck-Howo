@@ -13,3 +13,12 @@
 .footer-info__wrapper div h3{
     margin-bottom: 15px;
 }
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.social-links a{
+    color: #fff;
+    font-size: 30px;
+}

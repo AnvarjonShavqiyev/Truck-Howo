@@ -12,7 +12,7 @@ const Hero = () => {
       <div id='aboutus' className='hero__wrapper'>
         <div className='hero-information'>
             <h3>{t('hero-information')}</h3>
-            <button>{t('extiyot-qismlar')}</button>
+            <a href='#products'>{t('extiyot-qismlar')}</a>
         </div>
         <div className='hero-background'></div>
       </div>
