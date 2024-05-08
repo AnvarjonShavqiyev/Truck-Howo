@@ -14,7 +14,7 @@ const Products = () => {
                 <div className='category__wrapper'>
                     {data.map((category, index) => (
                         <div key={index} className="category-item">
-                            <img className="category-img" src={category.img} alt={category.title} />
+                            <img className="category-img" src={category.img} alt={category.title}/>
                             <h4 className='category-title'>{category.title}</h4>
                             <Link className='category-link' to={`/${category.title}`}>Hammasini ko'rish <IoIosArrowForward/></Link>
                         </div>
