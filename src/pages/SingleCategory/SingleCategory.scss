@@ -1,0 +1,25 @@
+.single-cat__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+    padding: 30px 0;
+}
+.single-category-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.all__products__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.product__wrapper img{
+    width: 250px;
+    height: 250px;
+}
+.product__wrapper h4{
+    width: 200px;
+}

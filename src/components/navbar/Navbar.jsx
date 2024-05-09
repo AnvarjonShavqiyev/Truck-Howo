@@ -3,11 +3,12 @@ import './Navbar.scss';
 import Container from '../../utils/Utils';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n/i18n'; 
+import { Link, useParams } from 'react-router-dom';
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [lang, setLang] = useState(localStorage.getItem('lang') || 'UZ');
-
+  const { name } = useParams();
   const changeLang = (selectedLang) => {
     setLang(selectedLang);
     localStorage.setItem('lang', selectedLang);
@@ -25,10 +26,10 @@ const Navbar = () => {
             <h1 className='logo'>Truck Howo</h1>
           </div>
           <ul className='navbar__menu'>
-            <li className='navbar__items'><a href='#aboutus'>{t('bizHaqimizda')}</a></li>
+            { !name && <li className='navbar__items'><a href='#aboutus'>{t('bizHaqimizda')}</a></li>}
             <li className='navbar__items'><a href='#products'>{t('maxsulotlar')}</a></li>
-            <li className='navbar__items'><a href='#main'>{t('asosiy')}</a></li>
-            <li className='navbar__items'><a href='#brands'>{t('brandlar')}</a></li>
+            <li className='navbar__items'><Link to='/'>{t('asosiy')}</Link></li>
+            { !name && <li className='navbar__items'><a href='#brands'>{t('brandlar')}</a></li>}
             <li className='navbar__items'><a href='#contact'>{t('contact')}</a></li>
           </ul>
           <div>

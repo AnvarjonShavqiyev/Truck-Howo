@@ -1,11 +1,38 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import data from '../../db/products';
+import './SingleCategory.scss'
+import Navbar from '../../components/navbar/Navbar'
+import Products from '../../components/products/Products'
+import Footer from '../../components/footer/Footer'
 const SingleCategory = () => {
-  const {name} = useParams()
-  return (
-    <div>{name}</div>
-  )
-}
+  const { name } = useParams();
+  const [category, setCategory] = useState([]);
 
-export default SingleCategory
+  useEffect(() => {
+    const newData = data.products.filter(product => name === product.title);
+    setCategory(newData[0]);
+  }, [name]);
+  console.log(category)
+  return (
+    category.data && 
+    <div>
+      <Navbar/>
+      <div className='single-cat__wrapper'>
+        <h4 className='single-category-title'>{category.title}</h4>
+        <div className='all__products__wrapper'>
+          {category.data.map((product, index) => (
+            <div className='product__wrapper' key={index}>
+              <img src={product.img} alt={product.name} />
+              <h4>{product.name}</h4>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Products/>
+      <Footer/>
+    </div>
+  );
+};
+
+export default SingleCategory;
