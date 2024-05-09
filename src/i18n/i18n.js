@@ -1,12 +1,14 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
+const lang = localStorage.getItem('lang')
+
 i18n
   .use(initReactI18next)
   .init({
-    lng: 'UZ', 
+    lng: lang, 
     resources: {
-      UZ: {
+      uz: {
         translation: {
             "bizHaqimizda":"Biz haqimizda",
             "maxsulotlar":"Maxsulotlar",
@@ -21,10 +23,14 @@ i18n
             "mijozlar":"mamnun mijozlar",
             "hamkorlar":"hamkorlar",
             "brandlar":"Brandlar",
-            "contact":"Bog'lanish"
-        },
+            "contact":"Bog'lanish",
+            "seeAll":"Hammasini ko'rish",
+            "manzil":"Manzilimiz",
+            "kuzating":"Bizni tarmoqlarda kuzating",
+            "boglaning":"Biz bilan bog'laning"            
+          },
       },
-      RU:{
+      ru:{
         translation: {
             "bizHaqimizda":"O нас",
             "maxsulotlar":"Продукты",
@@ -39,7 +45,11 @@ i18n
             "mijozlar":"довольных клиентов",
             "hamkorlar":"партнеры",
             "brandlar":"Бренды",
-            "contact":"Связаться с нами"
+            "contact":"Связаться с нами",
+            "seeAll":"Увидеть все",
+            "manzil":"Адрес",
+            "kuzating":"Следуйте за нами в сетях",
+            "boglaning":"Связаться с нами"
         },
       }
     },

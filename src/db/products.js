@@ -77,6 +77,16 @@ const data = {
     {
       title: "Тормозные части",
       img: "http://res.cloudinary.com/dqetkgwrr/image/upload/v1715245522/Images/hswhb1afjtnoocqxqkmk.jpg",
+      data:[
+        {
+          name:"Накладка тормоз.зад. 16 дырка L-16 х 22см",
+          img:"http://res.cloudinary.com/dqetkgwrr/image/upload/v1715252136/Images/ym4spq1re3can2prkkvy.jpg"
+        },
+        {
+          name:"",
+          img:""
+        },
+      ]
     },
     {
       title: "Фильтра",

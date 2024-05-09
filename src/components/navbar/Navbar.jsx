@@ -7,7 +7,7 @@ import { Link, useParams } from 'react-router-dom';
 
 const Navbar = () => {
   const { t } = useTranslation();
-  const [lang, setLang] = useState(localStorage.getItem('lang') || 'UZ');
+  const [lang, setLang] = useState(localStorage.getItem('lang') || 'uz');
   const { name } = useParams();
   const changeLang = (selectedLang) => {
     setLang(selectedLang);
@@ -38,10 +38,10 @@ const Navbar = () => {
               onChange={(e) => changeLang(e.target.value)}
               className='lang-select'
             >
-              <option value='UZ' className='lang-option'>
+              <option value='uz' className='lang-option'>
                 UZ
               </option>
-              <option value='RU' className='lang-option'>
+              <option value='ru' className='lang-option'>
                 RU
               </option>
             </select>

@@ -6,12 +6,14 @@ import hutai from '../../assets/photo/hutai-logo.jpg'
 import wabco from '../../assets/photo/logo-wabco.jpeg'
 import qinyan from '../../assets/photo/qinyan-logo.jpg'
 import sachs from '../../assets/photo/SACHS_original.webp'
+import { useTranslation } from 'react-i18next'
 
 const Brands = () => {
+  const { t } = useTranslation()
   return (
     <Container>
       <div className='brands__wrapper' id='brands'>
-        <h3 style={{fontSize:35, textAlign:'center',paddingTop:20}}>Brandlar</h3>
+        <h3 style={{fontSize:35, textAlign:'center',paddingTop:20}}>{t('brandlar')}</h3>
           <div className='all__brands'>
           <div className='brands'>
             <img src={holset}></img>

@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       <div className='adventages'>
         <Container>
-          <h3 style={{fontSize:35, textAlign:'center',paddingTop:20}}>Biz haqimizda</h3>
+          <h3 style={{fontSize:35, textAlign:'center',paddingTop:20}}>{t('bizHaqimizda')}</h3>
           <div className='about-us'>
             <div>
               <h3>4</h3>
