@@ -1,9 +1,10 @@
 import React from 'react';
 import './Products.scss';
 import Container from '../../utils/Utils';
-import products from '../../db/products.json';
+import products from '../../db/products';
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
+
 const Products = () => {
     const data = products && products.products && Array.isArray(products.products) ? products.products : [];
     
