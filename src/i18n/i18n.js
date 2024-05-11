@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-const lang = localStorage.getItem('lang')
+const lang = localStorage.getItem('lang') || 'uz'
 
 i18n
   .use(initReactI18next)
@@ -27,7 +27,8 @@ i18n
             "seeAll":"Hammasini ko'rish",
             "manzil":"Manzilimiz",
             "kuzating":"Bizni tarmoqlarda kuzating",
-            "boglaning":"Biz bilan bog'laning"            
+            "boglaning":"Biz bilan bog'laning" ,
+            "location":"Toshkent shahar, Sergeli tumani, Yangi Sergeli ko'chasi,Sergeli moshina bozori, avto ehtiyot qismlar 11/2-18 do’kon."
           },
       },
       ru:{
@@ -49,7 +50,8 @@ i18n
             "seeAll":"Увидеть все",
             "manzil":"Адрес",
             "kuzating":"Следуйте за нами в сетях",
-            "boglaning":"Связаться с нами"
+            "boglaning":"Связаться с нами",
+            "location":"Город Ташкент, Сергелийский район, улица Новый Сергели, Сергелийский авторынок, магазин автозапчастей 11/2-18."
         },
       }
     },

@@ -14,7 +14,7 @@ const Footer = () => {
             <div id='contact' className='footer-info__wrapper'>
                 <div>
                     <h3 className='adress'>{t('manzil')}:</h3>
-                    <p className='adress'>Toshkent shahar, Sergeli moshina bozori, avto ehtiyot qismlar 11/2-18 do’kon.</p>
+                    <p className='adress'>{t('location')}</p>
                 </div>
                 <div>
                     <h3 className='adress'>{t('kuzating')}:</h3>
