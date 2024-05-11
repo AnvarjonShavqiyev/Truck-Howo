@@ -3,10 +3,11 @@
 }
 .all__brands{
     display: flex;
-    // flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 55px;
+    padding: 20px;
 }
 .brands img{
     width: 200px;
