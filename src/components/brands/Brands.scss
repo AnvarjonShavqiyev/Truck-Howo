@@ -12,3 +12,14 @@
 .brands img{
     width: 200px;
 }
+@media only screen and (max-width: 690px) {
+    .brands:nth-child(2){
+        margin-top: -50px;
+    }
+    .brands:nth-child(3){
+        margin-top: -40px;
+    }
+    .brands img{
+        width: 150px;
+    }
+}

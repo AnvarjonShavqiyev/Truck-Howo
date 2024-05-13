@@ -41,11 +41,11 @@
     cursor: pointer;
 }
 .about-us{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: space-evenly;
     margin: 50px 0;   
-    flex-wrap: wrap;
     gap: 15px;
 }
 .about-us div{
@@ -58,4 +58,30 @@
 }
 .about-us div p{
     font-size: 20px;
+}
+
+@media only screen and (max-width: 630px){
+    .about-us {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero__wrapper{
+        background-image: url('../../assets/photo/truck2.jpg');
+    }
+    .hero-background{
+        opacity: 0.6;
+    }
+}
+@media only screen and (max-width: 430px){
+    .hero__wrapper{
+        background-image: url('../../assets/photo/truck1.jpg');
+    }
+    .hero-background{
+        opacity: 0.51;
+    }
+    .about-us div h3{
+        font-size: 25px;
+    }
+    .about-us div p{
+        font-size: 15px;
+    }
 }
