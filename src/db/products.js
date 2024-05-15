@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      title: "Полик",
+      title: "Аксессуар",
       img: "http://res.cloudinary.com/dqetkgwrr/image/upload/v1715245269/Images/tfzjfnpl7bzabd18i86i.jpg",
       data:[
         {
