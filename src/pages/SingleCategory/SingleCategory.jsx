@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import data from '../../db/products';
 import './SingleCategory.scss'
 import Navbar from '../../components/navbar/Navbar'
-import Products from '../../components/products/Products'
 import Footer from '../../components/footer/Footer'
 const SingleCategory = () => {
   const { name } = useParams();
@@ -18,6 +17,7 @@ const SingleCategory = () => {
     category.data && 
     <div>
       <Navbar/>
+      {/* <Products/> */}
       <div className='single-cat__wrapper'>
         <h4 className='single-category-title'>{category.title}</h4>
         <div className='all__products__wrapper'>
@@ -29,7 +29,6 @@ const SingleCategory = () => {
           ))}
         </div>
       </div>
-      <Products/>
       <Footer/>
     </div>
   );
