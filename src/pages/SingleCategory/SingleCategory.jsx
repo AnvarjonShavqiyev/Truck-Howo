@@ -20,9 +20,6 @@ const SingleCategory = () => {
     const filteredCategory = data.products.find((product) => currentCategory === product.title);
     if (filteredCategory) {
       setCategory(filteredCategory.data);
-    } else {
-      // Handle case when category is not found
-      setCategory([]);
     }
   }, [currentCategory]);
 
