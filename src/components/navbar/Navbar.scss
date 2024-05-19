@@ -1,5 +1,5 @@
 .navbar__wrapper{
-    background-color: #fff;
+    background-color: var(--mainBgColor);
     padding: 10px 0px;
 }
 .navbar{
@@ -9,19 +9,19 @@
 }
 .logo{
     font-size: 20px;
-    color: #000;
+    color: #fff;
 }
 .navbar__menu{
     display: flex;
     gap: 40px;
-    color: #000;
+    color: #fff;
 }
 .navbar__items a{
-    color: #000;
+    color: #fff;
 }
 .lang-select{
     background-color: transparent;
-    color: #000;
+    color: #fff;
     border: none;
     font-size: 16px;
 }

@@ -59,8 +59,25 @@
 .about-us div p{
     font-size: 20px;
 }
+.about-us-text h4{
+    padding: 20px 20px 40px 20px;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 810px){
+    .about-us-text h4{
+        padding: 20px 20px 40px 20px;
+        font-size: 18px;
+    }
+}
 
 @media only screen and (max-width: 630px){
+    .about-us-text h4{
+        padding: 20px 20px 40px 20px;
+        font-size: 16px;
+    }
     .about-us {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -71,7 +88,12 @@
         opacity: 0.6;
     }
 }
+
 @media only screen and (max-width: 430px){
+    .about-us-text h4{
+        padding: 20px 20px 40px 20px;
+        font-size: 14px;
+    }
     .hero__wrapper{
         background-image: url('../../assets/photo/truck1.jpg');
     }

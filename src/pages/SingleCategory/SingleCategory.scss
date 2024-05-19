@@ -8,6 +8,7 @@
 }
 .single-category-title {
   font-size: 40px;
+  color: #000;
 }
 .all__products__wrapper {
   display: flex;
@@ -19,8 +20,10 @@
 .product__wrapper {
   width: 260px;
   height: 300px;
-  border: 1px solid #000;
   padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 #d5d5d5;
+  border-radius: 25px;
 }
 .product__wrapper img {
   width: 230px;
@@ -33,7 +36,7 @@
   word-break: break-all;
 }
 .single-cat-header__wrapper {
-  background-color: #000;
+  background-color: #fff;
   color: #fff;
   padding: 10px 0;
 }
@@ -48,6 +51,8 @@
   padding: 10px 5px;
   font-size: 16px;
   outline: none;
+  background-color: var(--mainBgColor);
+  color: #fff;
 }
 .pagination-side-btn {
   display: flex;
@@ -75,13 +80,13 @@
   color: #fff !important;
 }
 .ant-pagination-item-active {
-  background-color: #000 !important;
-  border-color: #000 !important;
+  background-color: var(--mainBgColor) !important;
+  border-color: var(--mainBgColor) !important;
 }
 .ant-pagination-prev .ant-pagination-item-link,
 .ant-pagination-next .ant-pagination-item-link {
-  background-color: #000 !important;
-  border-color: #000 !important;
+  background-color: var(--mainBgColor) !important;
+  border-color: var(--mainBgColor) !important;
 }
 .ant-pagination-prev .ant-pagination-item-link svg,
 .ant-pagination-next .ant-pagination-item-link svg {

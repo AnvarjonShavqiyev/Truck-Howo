@@ -26,7 +26,7 @@ const Hero = () => {
               <p>{t('filiallar')}</p>
             </div>
             <div>
-              <h3>{counterOn && <CountUp start={0} end={3} duration={2} delay={0.5}/>}</h3>
+              <h3>{counterOn && <CountUp start={0} end={25} duration={2} delay={0.5}/>}</h3>
               <p>{t('tajriba')}</p>
             </div>
             <div>
@@ -34,11 +34,14 @@ const Hero = () => {
               <p>{t('mijozlar')}</p>
             </div>
             <div>
-              <h3>{counterOn && <CountUp start={0} end={10} duration={2} delay={0.5}/>}+</h3>
+              <h3>{counterOn && <CountUp start={0} end={30} duration={2} delay={0.5}/>}+</h3>
               <p>{t('hamkorlar')}</p>
             </div>
           </div>
           </ScrollTrigger>
+          <div className='about-us-text'>
+            <h4>Howo va Shacman og'ir yuk mashinalari uchun ehtiyot qismlar sotadigan online do'konimiz, yuqori sifatli mahsulotlar va mijozlar ehtiyojlarini qondirishga qaratilgan xizmatlari bilan faxrlanadi. 25 yillik tajribamiz davomida biz 500 dan ortiq mamnun mijozlar bazasini shakllantirdik va ularning ishonchini qozondik. Hozirda kompaniyamizning to'rt ta filiallari mavjud bo'lib, ular orqali mijozlarimizga qulay va tezkor xizmat ko'rsatamiz. Shuningdek, bizning 30 dan ortiq ishonchli hamkorlarimiz bilan mustahkam aloqalarimiz mavjud bo'lib, ular orqali biz eng sifatli va original ehtiyot qismlarni taqdim etamiz. Maqsadimiz – yuk mashinangizning har doim ishonchli va samarali ishlashini ta'minlashdir.</h4>
+          </div>
         </Container>
       </div>
     </div>

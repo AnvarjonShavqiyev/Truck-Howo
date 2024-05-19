@@ -28,7 +28,7 @@ const SingleCategory = () => {
     const endIndex = startIndex + pageSize;
     setCurrentPageData(category.slice(startIndex, endIndex));
   }, [currentPage, category]);
-
+;
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
