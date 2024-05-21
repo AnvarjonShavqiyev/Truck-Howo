@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from '../../utils/Utils'
 import './Brands.scss'
 import holset from '../../assets/photo/holset.png'
@@ -8,18 +8,30 @@ import qinyan from '../../assets/photo/qinyan-logo.jpg'
 import sachs from '../../assets/photo/SACHS_original.webp'
 import { useTranslation } from 'react-i18next'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-
+import address from '../../db/addres'
 const Brands = () => {
+  const [filial, setFilial] = useState('filial1')
+  const [adress,setAdress] = useState(address[0])
   const { t } = useTranslation()
+  
+  const handleChange = (event) => {
+    setFilial(event.target.value)
+  }
+
+  useEffect(() => {
+    setAdress(address.filter((manzil) => manzil.name === filial)[0])
+  },[filial])
+
   const mapStyles = {
     height: "500px",
     width: "100%"
   };
 
   const defaultCenter = {
-    lat: 41.23228776566744,
-    lng: 69.21575043819631
+    lat: adress.lat,
+    lng: adress.lng
   };
+
   return (
     <Container>
       <div className='brands__wrapper' id='brands'>
@@ -43,6 +55,15 @@ const Brands = () => {
         </div>
       </div>
       <div className='google-map__wrapper'>
+        <div className='map-header'>
+          <h4>Hududni tanlang: </h4>
+          <select className="single-cat-selection" value={filial} onChange={handleChange}>
+              <option value="filial1">Toshkent viloyati</option>
+              <option value="filial2">Toshkent shahri</option>
+              <option value="filial3">Samarqand viloyati</option>
+              <option value="filial4">Surxandaryo viloyati</option>
+            </select>
+        </div>
         <LoadScript googleMapsApiKey="AIzaSyD7R0Z4PmibH-7aVLDWrfNRiXiyvOss40Q">
           <GoogleMap
             mapContainerStyle={mapStyles}
