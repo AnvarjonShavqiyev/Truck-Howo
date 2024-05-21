@@ -58,8 +58,8 @@ const Brands = () => {
         <div className='map-header'>
           <h4>Hududni tanlang: </h4>
           <select className="single-cat-selection" value={filial} onChange={handleChange}>
-              <option value="filial1">Toshkent viloyati</option>
-              <option value="filial2">Toshkent shahri</option>
+              <option value="filial1">Toshkent shahri</option>
+              <option value="filial2">Toshkent viloyati</option>
               <option value="filial3">Samarqand viloyati</option>
               <option value="filial4">Surxandaryo viloyati</option>
             </select>
